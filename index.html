@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced HTML</title>
+  </head>
+  <body>
+    <h2>Ordered List</h2>
+    <ol type="I">
+      <li>Home</li>
+      <li>About Us</li>
+      <li>Services</li>
+      <li>Projects</li>
+      <li>Contact Us</li>
+    </ol>
+
+    <h2>External Image</h2>
+    <img
+      src="https://images.pexels.com/photos/2102416/pexels-photo-2102416.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      alt="Laptops"
+      width="300"
+      height="400"
+    />
+
+    <h2>Table</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>name</th>
+          <th>address</th>
+          <th>mobile</th>
+          <th>emails</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>John Doe</td>
+          <td>126 Street</td>
+          <td>+254712345678</td>
+          <td>johndoe@gmail.com</td>
+        </tr>
+
+        <tr>
+          <td>Jane Doe</td>
+          <td>127 Street</td>
+          <td>+256723456789</td>
+          <td>janedoe@gmail.com</td>
+        </tr>
+
+        <tr>
+          <td>Chinedu Ikidieze</td>
+          <td>128 Street</td>
+          <td>+257734567890</td>
+          <td>chineduikidieze@gmail.com</td>
+        </tr>
+
+        <tr>
+          <td>Osita Ihame</td>
+          <td>129 Street</td>
+          <td>+258745678901</td>
+          <td>ositaihame@gmail.com</td>
+        </tr>
+
+        <tr>
+          <td>Jonh Kit Lee</td>
+          <td>130 Street</td>
+          <td>+259756789012</td>
+          <td>kitlee@gmail.com</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Registration Form</h2>
+    <form action="">
+      <label for="name">Name: </label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        placeholder="Enter your name"
+        required
+      />
+
+      <label for="email">Email: </label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Enter your email"
+        required
+      />
+
+      <label for="password">Password: </label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        required
+        minlength="8"
+        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+        title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+      />
+
+      <!-- Radio buttons for gender -->
+      <fieldset>
+        <legend>Gender:</legend>
+        <label>
+          <input type="radio" name="gender" value="male" required />
+          Male
+        </label>
+        <label>
+          <input type="radio" name="gender" value="female" required />
+          Female
+        </label>
+
+        <label>
+          <input type="radio" name="gender" value="other" required />
+          Other
+        </label>
+      </fieldset>
+
+      <!-- Checkboxes for interests -->
+      <fieldset>
+        <legend>Interest:</legend>
+        <label>
+          <input type="checkbox" name="interests" value="sports" />
+          Sports
+        </label>
+
+        <label>
+          <input type="checkbox" name="interests" value="music" />
+          Music
+        </label>
+
+        <label>
+          <input type="checkbox" name="interests" value="reading" />
+          Reading
+        </label>
+      </fieldset>
+
+      <!-- Dropdown for country -->
+      <label for="country">Country: </label>
+      <select name="country" id="country" required>
+        <option value="" disabled selected>Select your country</option>
+        <option value="kenya">Kenya</option>
+        <option value="sa">South Africa</option>
+        <option value="ug">Uganda</option>
+        <option value="nigeria">Nigeria</option>
+        <option value="other">Other</option>
+      </select>
+
+      <button type="submit">Register</button>
+    </form>
+  </body>
+</html>
